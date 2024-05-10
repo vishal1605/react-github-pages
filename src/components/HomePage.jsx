@@ -10,7 +10,7 @@ export default function HomePage() {
 
     const logout = (e) => {
         fetch('http://localhost:8080/logout',{credentials: 'include'}).then(json=>json.json()).then(data=>{
-            navigate('/react-github-pages/')
+            navigate('/')
         }).catch(err=>console.log(err))
     }
   return (

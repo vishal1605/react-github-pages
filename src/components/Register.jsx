@@ -39,7 +39,7 @@ export default function Register() {
                     <div id="formContent">
 
                         <div className="fadeIn first">
-                            <img src="./src/assets/images/image.png" id="icon" alt="User Icon" />
+                            <img src="/src/assets/images/image.png" id="icon" alt="User Icon" />
                         </div>
 
                         <form onSubmit={submitForm}>
@@ -60,7 +60,7 @@ export default function Register() {
                         </form>
 
                         <div id="formFooter">
-                            <a className="underlineHover" href="/react-github-pages/">Login</a>
+                            <a className="underlineHover" href="/">Login</a>
                         </div>
 
                     </div>
