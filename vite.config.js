@@ -9,5 +9,5 @@ export default defineConfig({
   //   strictPort: true,
   //   port: 4000
   // }
-  base: '/react-github-pages/'
+  base: '/'
 })
