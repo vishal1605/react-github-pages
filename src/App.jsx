@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import './App.css'
-import { Route, Routes, useNavigate } from 'react-router-dom';
+// import { Route, Routes, useNavigate } from 'react-router-dom';
 import Login from './components/Login';
 import Register from './components/Register';
 import HomePage from './components/HomePage';
 
 function App() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const submitFormLogin = (e) => {
       e.preventDefault();
       let formData = new FormData(e.target);
@@ -31,7 +31,7 @@ function App() {
           return json.json()}).then(data=>{
           console.log(data)
           if (data.email) {
-              navigate(`/home-page`)
+              // navigate(`/home-page`)
           }else{
               alert("Invalid User")
           }
