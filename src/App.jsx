@@ -15,8 +15,8 @@ function App() {
       <div className="container-fluid">
          <Routes>
             <Route path="/" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="/home-page" element={<HomePage />} />
+            <Route path="/react-github-pages/register" element={<Register />} />
+            <Route path="/react-github-pages/home-page" element={<HomePage />} />
           </Routes>
       </div>
     )

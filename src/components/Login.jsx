@@ -27,7 +27,7 @@ export default function Login() {
             return json.json()}).then(data=>{
             console.log(data)
             if (data.email) {
-                navigate(`/home-page`)
+                navigate(`/react-github-pages/home-page`)
             }else{
                 alert("Invalid User")
             }
@@ -42,7 +42,7 @@ export default function Login() {
                     <div id="formContent">
 
                         <div className="fadeIn first">
-                            <img src="/src/assets/images/image.png" id="icon" alt="User Icon" />
+                            <img src="./src/assets/images/image.png" id="icon" alt="User Icon" />
                         </div>
 
                         <form onSubmit={submitFormLogin}>
@@ -52,7 +52,7 @@ export default function Login() {
                         </form>
 
                         <div id="formFooter">
-                            <a className="underlineHover" href="/register">Register</a>
+                            <a className="underlineHover" href="/react-github-pages/register">Register</a>
                         </div>
 
                     </div>
