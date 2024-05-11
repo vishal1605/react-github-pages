@@ -14,7 +14,7 @@ export default function Login() {
             console.log(key, value)
             user[key] = value;
         }
-        fetch('http://localhost:8080/login-process', {
+        fetch('http://localhost:80/login-process', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

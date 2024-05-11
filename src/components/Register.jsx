@@ -16,7 +16,7 @@ export default function Register() {
             console.log(key, value)
             user[key] = value;
         }
-        fetch('http://localhost:8080/register-user', {
+        fetch('http://localhost:80/register-user', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
