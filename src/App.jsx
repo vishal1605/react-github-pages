@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import './App.css'
-import { Route, Routes, useNavigate } from 'react-router-dom';
+import { Navigate, Route, Routes, useNavigate } from 'react-router-dom';
 import Login from './components/Login';
 import Register from './components/Register';
 import HomePage from './components/HomePage';
+import Error from './components/Error';
 
 function App() {
 
@@ -14,9 +15,11 @@ function App() {
     return (
       <div className="container-fluid">
          <Routes>
-            <Route path="/react-github-pages/" element={<Login />} />
-            <Route path="/react-github-pages/register" element={<Register />} />
-            <Route path="/react-github-pages/home-page" element={<HomePage />} />
+            <Route path="/" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/home-page" element={<HomePage />} />
+            <Route path="/error" element={<Error />} />
+            <Route path='*' element={<Navigate to="/error" />} />
           </Routes>
       </div>
     )

@@ -39,7 +39,7 @@ export default function Register() {
                     <div id="formContent">
 
                         <div className="fadeIn first">
-                            <img src="./src/assets/images/image.png" id="icon" alt="User Icon" />
+                            <img src="/src/assets/images/image.png" id="icon" alt="User Icon" />
                         </div>
 
                         <form onSubmit={submitForm}>
