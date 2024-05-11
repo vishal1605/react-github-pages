@@ -14,7 +14,7 @@ export default function Login() {
             console.log(key, value)
             user[key] = value;
         }
-        fetch('http://ec2-3-110-177-187.ap-south-1.compute.amazonaws.com/login-process', {
+        fetch('https://5b0c-3-110-177-187.ngrok-free.app/login-process', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

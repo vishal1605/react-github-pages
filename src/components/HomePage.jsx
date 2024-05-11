@@ -5,11 +5,11 @@ export default function HomePage() {
     const navigate = useNavigate();
 
     const fetchAllUser = (e) => {
-        fetch('http://ec2-3-110-177-187.ap-south-1.compute.amazonaws.com/get-all-user',{credentials: 'include'}).then(json=>json.json()).then(data=>console.log(data)).catch(err=>console.log(err))
+        fetch('https://5b0c-3-110-177-187.ngrok-free.app/get-all-user',{credentials: 'include'}).then(json=>json.json()).then(data=>console.log(data)).catch(err=>console.log(err))
     }
 
     const logout = (e) => {
-        fetch('http://ec2-3-110-177-187.ap-south-1.compute.amazonaws.com/logout',{credentials: 'include'}).then(json=>json.json()).then(data=>{
+        fetch('https://5b0c-3-110-177-187.ngrok-free.app/logout',{credentials: 'include'}).then(json=>json.json()).then(data=>{
             navigate('/')
         }).catch(err=>console.log(err))
     }
