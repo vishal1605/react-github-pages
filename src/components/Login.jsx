@@ -27,7 +27,7 @@ export default function Login() {
             return json.json()}).then(data=>{
             console.log(data)
             if (data.email) {
-                navigate(`/react-github-pages/home-page`)
+                navigate(`/home-page`)
             }else{
                 alert("Invalid User")
             }
