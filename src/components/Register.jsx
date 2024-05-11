@@ -16,7 +16,7 @@ export default function Register() {
             console.log(key, value)
             user[key] = value;
         }
-        fetch('http://localhost:80/register-user', {
+        fetch('http://ec2-3-110-177-187.ap-south-1.compute.amazonaws.com/register-user', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
