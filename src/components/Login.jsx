@@ -14,7 +14,7 @@ export default function Login() {
             console.log(key, value)
             user[key] = value;
         }
-        fetch('https://8739-13-201-128-125.ngrok-free.app/login-process', {
+        fetch('https://b62b-13-201-128-125.ngrok-free.app/login-process', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
