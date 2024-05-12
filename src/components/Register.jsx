@@ -16,7 +16,7 @@ export default function Register() {
             console.log(key, value)
             user[key] = value;
         }
-        fetch('https://7db2-13-201-128-125.ngrok-free.app/register-user', {
+        fetch('https://8739-13-201-128-125.ngrok-free.app/register-user', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
